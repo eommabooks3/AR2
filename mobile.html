@@ -1,0 +1,396 @@
+<!--
+book1 : 보이지 않는 선
+book2 : 환경
+book3 : 포켓몬도감
+book4 : 우주
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>꿈틀꿈틀AR그림책</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+
+    <!-- import script -->
+    <script type="text/javascript" src="./scripts/soundHandler.js"></script>
+    <script type="text/javascript" src="./scripts/animationMobile.js"></script>
+    <!-- <script type="text/javascript" src="./scripts/main.js"></script> -->
+  </head>
+  <body style="margin: 0px; overflow: hidden">
+    <a-scene
+      embedded
+      arjs="detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_9_3;"
+    >
+    <a-assets>
+      <img id="0img" src="./assets/0img.png" />
+      <img id="2img" src="./assets/2img.png" />
+      <img id="3img" src="./assets/3img.png" />
+      <img id="4img" src="./assets/4img.png" />
+      <img id="5img" src="./assets/5img.png" />
+      <img id="6img" src="./assets/6img.png" />
+      <img id="7img" src="./assets/7img.png" />
+      <img id="8img" src="./assets/8img.png" />
+      <img id="13img" src="./assets/13img.png" />
+      <img id="18img" src="./assets/18img.png" />
+      <img id="19img" src="./assets/19img.png" />
+      <img id="20img" src="./assets/20img.png" />
+      <img id="21img" src="./assets/21img.png" />
+      <img id="27img" src="./assets/27img.png" />
+      <img id="31img" src="./assets/31img.png" />
+      
+      <audio
+      id="1audio"
+      src="./assets/1audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="9audio"
+      src="./assets/9audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="10audio"
+      src="./assets/10audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="11audio"
+      src="./assets/11audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="12audio"
+      src="./assets/12audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="13audio"
+      src="./assets/13audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="17audio"
+      src="./assets/17audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="22audio"
+      src="./assets/22audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="24audio"
+      src="./assets/24audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="26audio"
+      src="./assets/26audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="27audio"
+      src="./assets/27audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="28audio"
+      src="./assets/28audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="29audio"
+      src="./assets/29audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="30audio"
+      src="./assets/30audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="31audio"
+      src="./assets/31audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+      <audio
+      id="32audio"
+      src="./assets/32audio.mp3"
+      type="audio/mp3"
+      preload="auto"
+    ></audio>
+
+    </a-assets>
+
+    <!-- 단체사진 -->
+    <a-marker type="barcode" value="0">
+      <a-entity rotation="0 0 0">
+        <a-image
+          src="#0img"
+          position="0 2.5 0"
+          rotation="0 0 0"
+          scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <!-- [비밀번호] -->
+    <a-marker type="barcode" value="1">
+      <a-sound src="#1audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="2">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#2img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    
+    <a-marker type="barcode" value="3">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#3img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+    
+    <a-marker type="barcode" value="4">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#4img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+    
+    <a-marker type="barcode" value="5">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#5img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>      
+
+    <a-marker type="barcode" value="6">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#6img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="7">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#7img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="8">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#8img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="9">
+      <a-sound src="#9audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="10">
+      <a-sound src="#10audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="11">
+      <a-sound src="#11audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="12">
+      <a-sound src="#12audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+    
+    <a-marker type="barcode" value="13">
+      <a-sound src="#13audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+      
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#13img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+            느리게회전하기
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="17">
+      <a-sound src="#17audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="18">
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#18img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+            커졌다가작아지기
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="19">
+      <a-entity rotation="0 0 0">
+        <a-image
+          src="#19img"
+          position="0 2.5 0"
+          rotation="0 0 0"
+          scale="6 9 9"
+          점프하기
+      ></a-image>
+    </a-entity>
+  </a-marker>
+
+  <a-marker type="barcode" value="20">
+    <a-entity rotation="0 0 0">
+      <a-image
+        src="#20img"
+        position="0 2.5 0"
+        rotation="0 0 0"
+        scale="6 9 9"
+        오른쪽으로
+    ></a-image>
+  </a-entity>
+</a-marker>
+
+  <a-marker type="barcode" value="21">
+    <a-entity rotation="0 0 0">
+      <a-image
+        src="#21img"
+        position="0 2.5 0"
+        rotation="0 0 0"
+        scale="6 9 9"
+        오른쪽으로
+    ></a-image>
+  </a-entity>
+</a-marker>
+
+<a-marker type="barcode" value="22">
+  <a-sound src="#22audio" autoplay="false" loop="true" volume="10" soundhandler>
+  </a-sound>
+</a-marker>
+
+<a-marker type="barcode" value="24">
+  <a-sound src="#24audio" autoplay="false" volume="5" soundhandler>
+  </a-sound>
+</a-marker>
+
+<a-marker type="barcode" value="26">
+  <a-sound src="#26audio" autoplay="false" volume="5" soundhandler>
+  </a-sound>
+</a-marker>
+
+
+    <a-marker type="barcode" value="27">
+      <a-sound src="#27audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+      
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#27img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="28">
+      <a-sound src="#28audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="29">
+      <a-sound src="#29audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="30">
+      <a-sound src="#30audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+    <a-marker type="barcode" value="31">
+      <a-sound src="#31audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+      
+        <a-entity rotation="0 0 0">
+          <a-image
+            src="#31img"
+            position="0 2.5 0"
+            rotation="0 0 0"
+            scale="6 9 9"
+        ></a-image>
+      </a-entity>
+    </a-marker>
+
+    <a-marker type="barcode" value="32">
+      <a-sound src="#32audio" autoplay="false" volume="5" soundhandler>
+      </a-sound>
+    </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
